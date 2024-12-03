@@ -10,16 +10,18 @@ A simple command-line interface (CLI) application to manage your tasks. This app
 - Delete tasks
 - Display human-readable timestamps (e.g., "2 days ago")
 
+---
+
 ## How to Run the App Without Using `./todo`  
 
 By default, after building the app, you run it using `./todo`. However, to make it executable system-wide using just `todo`, follow these steps:
 
-### Step 1: Build the App
+### Step 1: Build the App (Optional)
 
-Run the following command in the root directory of the project to build the application:
+You can download the exe file in the Releases tab in the right side, but if you've modified the code, run the following command in the root directory of the project to build the executable:
 
 ```bash
-go build -o todo
+go build -o todo.exe
 ```
 
 This creates an executable file named `todo`.
@@ -62,6 +64,9 @@ todo help
 ```bash
 todo add
 ```
+```bash
+todo add -t "Make a new project" -s "n"
+```
 
 ### Mark a Task as Complete
 ```bash
@@ -73,11 +78,21 @@ todo complete
 todo delete
 ```
 
+### See uncompleted Tasks
+```bash
+todo list
+```
+
+### See all Tasks
+```bash
+todo list -a
+```
+
 ---
 
 ## Development
 
-To customize or add new features, edit the `cmd` folder where the commands are implemented. Add your custom commands and link them to the root command in `root.go`.
+To customize or add new features, edit the `cmd` folder where the commands are implemented. Don't forget to link your custom made commands to the root command in `root.go`.
 
 ---
 
