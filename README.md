@@ -12,6 +12,13 @@ A simple command-line interface (CLI) application to manage your tasks. This app
 
 ---
 
+## Demo
+
+
+https://github.com/user-attachments/assets/ef0e4547-f485-486e-808c-05e93b1736de
+
+
+
 ## How to Run the App Without Using `./todo`  
 
 By default, after building the app, you run it using `./todo`. However, to make it executable system-wide using just `todo`, follow these steps:
